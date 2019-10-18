@@ -47,3 +47,19 @@ This will start octant on localhost at port 7777, to access the UI of Octant, cl
 You might have to hit  'Reload this page' to see Octant UI
 {% endhint %}
 
+### Step 3: Exploring Resource Viewer
+
+Octant can help visualize Kubernetes resource objects that are associated with with each other.
+Typically if a deployment has Pods, Replicasets Services created for a worklaod, the only way to understand how these resources are linked is by either looking at the YAML file that was used to deploy or search for onjects via Kubectl/K8s Dashbaord and match Labels.
+Octant can also help ypu look at Custom Resource Objects( CRD's) deployed in a Cluster.
+
+For e.g, Go to the Octant Dashbaord as described in Step 2
+1. Click on `Deployments` from the left hand side bar and click on `kubernetes-dashboard` on the right hand side under Deployments.
+2. This will take you to the `Deployment/kubernetes-dashboard` page
+3. The summary page will list information about the deployment, pods, volumes etc.
+4. Click on the `Rsource Viewer` at the top of the Page
+5. You will see all the resources that `kubernetes-dashbaord` depolyment is associated with. Including ReplicaSets, Services,Pods, Service Accounts used etc.
+6. The `Resource Viewer` also shows the health of K8s objects via colors in the Resource Viewer
+    Green = All Good
+    Red = Onject status is not good
+  
