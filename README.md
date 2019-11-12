@@ -63,9 +63,11 @@ For e.g, Go to the Octant Dashboard as described in Step 2
 
 5. You will see all the resources that `kubernetes-dashbaord` deployment is associated with. Including ReplicaSets, Services, Pods, Service Accounts used etc.
 
- 6. The `Resource Viewer` also shows the health of K8s objects via colors in the Resource Viewer
+6. The `Resource Viewer` also shows the health of K8s objects via colors in the Resource Viewer
 
 `Green = All Good`
 
  `Red = Object status is not good`
+
+7. The `YAML` tab shows the config used for the deployment at creation and current status of the deployment in YAML format. 
 
