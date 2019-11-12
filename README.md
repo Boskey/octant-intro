@@ -87,14 +87,15 @@ Octant can also help view std error logs  within a Pod. This can help debug issu
 
 ```text
 kubectl create ns planespotter
-kubectl apply -f https://raw.githubusercontent.com/Boskey/planespotter/master/kubernetes/frontend-deployment_all_k8s.yaml  
+kubectl apply -f https://raw.githubusercontent.com/Boskey/planespotter/master/kubernetes/frontend-deployment_all_k8s.yaml 
+kubectl apply -f https://raw.githubusercontent.com/Boskey/planespotter/master/kubernetes/redis_and_adsb_sync_all_k8s.yaml    
 ```
 
 4. Go back to Octant Dashboard, click `Octant` at the topmost bar.
 
-5. Select `planespotter` as the namespace from the dropdown at the top 
+5. Select `planespotter` as the namespace from the drop down at the top 
 
-You will see all the ressources like pods, deployments, Replicasets that were created for this app.
+You will see all the resources like pods, deployments, Replicasets that were created for this app.
 
 
 
