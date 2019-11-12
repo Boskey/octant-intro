@@ -53,7 +53,7 @@ Octant can help visualize Kubernetes resource objects that are associated with w
 
 For e.g, Go to the Octant Dashboard as described in Step 2 
 
-1. Click on `Deployments` from the left hand side bar and click on `kubernetes-dashboard` on the right hand side under Deployments. 
+1. Click on `Deployments` from the left hand side bar --&gt; Select `Kube-System` as the namespace from the dropdown at the top of the page a nd click on `kubernetes-dashboard` on the right hand side under Deployments. 
 
 2. This will take you to the `Deployment/kubernetes-dashboard` page 
 
@@ -61,5 +61,11 @@ For e.g, Go to the Octant Dashboard as described in Step 2
 
 4. Click on the `Rsource Viewer` at the top of the Page 
 
-5. You will see all the resources that `kubernetes-dashbaord` deployment is associated with. Including ReplicaSets, Services,Pods, Service Accounts used etc. 6. The `Resource Viewer` also shows the health of K8s objects via colors in the Resource Viewer Green = All Good Red = Object status is not good
+5. You will see all the resources that `kubernetes-dashbaord` deployment is associated with. Including ReplicaSets, Services, Pods, Service Accounts used etc.
+
+ 6. The `Resource Viewer` also shows the health of K8s objects via colors in the Resource Viewer
+
+`Green = All Good`
+
+ `Red = Object status is not good`
 
