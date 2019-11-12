@@ -79,7 +79,7 @@ On the Octant Dashboard, select `kube-system` from the drop down on top of the p
 
 ## Step 5: Viewing Logs for Debugging
 
-Octant can also help view std error logs  within a Pod. This can help deubug issues with an app/pod. 
+Octant can also help view std error logs  within a Pod. This can help debug issues with an app/pod. 
 
 1. Lets start by deploying a simple app called `planespotter`
 2. Go back to the Terminal by clicking `Terminal` in the top bar
@@ -90,7 +90,13 @@ kubectl create ns planespotter
 kubectl apply -f https://raw.githubusercontent.com/Boskey/planespotter/master/kubernetes/frontend-deployment_all_k8s.yaml  
 ```
 
-Go back to 
+4. Go back to Octant Dashboard, click `Octant` at the topmost bar.
+
+5. Select `planespotter` as the namespace from the dropdown at the top 
+
+You will see all the ressources like pods, deployments, Replicasets that were created for this app.
+
+
 
 
 
