@@ -38,7 +38,7 @@ wget https://github.com/vmware-tanzu/octant/releases/download/v0.8.0/octant_0.8.
 
 ```text
 cd ~/octant_0.8.0_Linux-64bit/
-export OCTANT_LISTENER_ADDR=0.0.0.0:7777 && ./octant
+export OCTANT_LISTENER_ADDR=0.0.0.0:7777 && ./octant &
 ```
 
 This will start octant on localhost at port 7777, to access the UI of Octant, click on the 'Octant' button on the top of the page within 'My Lab'
@@ -76,4 +76,21 @@ For e.g, Go to the Octant Dashboard as described in Step 2
 With Project Octant, one can see  Custom Resource Definitions \(CRD's\) created in a given Cluster. CRD's cannot be visualized today even from the Kubernetes Dashboard. 
 
 On the Octant Dashboard, select `kube-system` from the drop down on top of the page. Select `Custom Resources` from the left hand side menu. You will start to see all the  CRD's within the cluster.
+
+## Step 5: Viewing Logs for Debugging
+
+Octant can also help view std error logs  within a Pod. This can help deubug issues with an app/pod. 
+
+1. Lets start by deploying a simple app called `planespotter`
+2. Go back to the Terminal by clicking `Terminal` in the top bar
+3. execute the below command, this will install the `planespotter` app
+
+```text
+kubectl create ns planespotter
+kubectl apply -f https://raw.githubusercontent.com/Boskey/planespotter/master/kubernetes/frontend-deployment_all_k8s.yaml  
+```
+
+Go back to 
+
+
 
