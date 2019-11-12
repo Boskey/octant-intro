@@ -71,3 +71,9 @@ For e.g, Go to the Octant Dashboard as described in Step 2
 
 7. The `YAML` tab shows the config used for the deployment at creation and current status of the deployment in YAML format. 
 
+## Step 4: Exploring Custom Resource Definitions
+
+With Project Octant, one can see  Custom Resource Definitions \(CRD's\) created in a given Cluster. CRD's cannot be visualized today even from the Kubernetes Dashboard. 
+
+On the Octant Dashboard, select `kube-system` from the drop down on top of the page. Select `Custom Resources` from the left hand side menu. You will start to see all the  CRD's within the cluster.
+
