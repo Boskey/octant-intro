@@ -95,7 +95,15 @@ kubectl apply -f https://raw.githubusercontent.com/Boskey/planespotter/master/ku
 
 5. Select `planespotter` as the namespace from the drop down at the top 
 
-You will see all the resources like pods, deployments, Replicasets that were created for this app.
+You will see all the resources like pods, deployments, Replica sets that were created for this app. Click on Pods from the LHS menu. Observe the status of the pod `adsb-sync.` You will notice the pod status is `Running` however,  zero of one \( 0/1\)  nodes are ready. The contianers in the pod are not Ready. To take a look at what's going on
+
+1. Click on the pod with a name starting from `adsb-sync` 
+2. Click on the `Logs` tab
+3. Wait a few second as the Pod restarts
+
+Observe the system error logs reported by the container. 
+
+
 
 
 
