@@ -9,8 +9,6 @@ description: >-
 
 ### Environment Overview <a id="environment-overview"></a>
 
-‌
-
 Your lab environment is hosted with a cloud server instance. This instance is accessible by clicking the “My Lab” icon on the left of your Strigo web page. You can access the terminal session using the built-in interface provided by Strigo or feel free to SSH directly as well \(instructions will appear in the terminal\).‌
 
 The appropriate kubernetes related tools \(docker, kubectl, kubernetes, etc.\) have already been installed ahead of time.‌
