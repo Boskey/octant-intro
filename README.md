@@ -101,6 +101,12 @@ You will see all the resources like pods, deployments, Replica sets that were cr
 
 Observe the system error logs reported by the container. 
 
+## Port Forwarding to view app
+
+A lot of times when we are testing apps deployed in Kubernetes its important to connect to the Pods interface to validate the apps functionality. Developers may want to do do this without necessarily creating a Service Type Loadbalancer.  Octant can help create a simple port forward for a pod via its dashboard.
+
+
+
 
 
 
