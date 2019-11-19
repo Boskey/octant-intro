@@ -73,7 +73,7 @@ For e.g, Go to the Octant Dashboard as described in Step 2
 
 With Project Octant, one can see  Custom Resource Definitions \(CRD's\) created in a given Cluster. CRD's cannot be visualized today even from the Kubernetes Dashboard. 
 
-On the Octant Dashboard, select `kube-system` from the drop down on top of the page. Select `Custom Resources` from the left hand side menu. You will start to see all the  CRD's within the cluster.
+On the Octant Dashboard, select `kube-system` from the drop down on top of the page. From the Left Hand side menu, under `Cluster Overview` click on`Custom Resources`. You will start to see all the  CRD's within the cluster.
 
 ## Step 5: Viewing Logs for Debugging
 
@@ -100,6 +100,14 @@ You will see all the resources like pods, deployments, Replica sets that were cr
 3. Wait a few second as the Pod restarts
 
 Observe the system error logs reported by the container. 
+
+## Port Forwarding to view app
+
+A lot of times when we are testing apps deployed in Kubernetes its important to connect to the Pods interface to validate the apps functionality. Developers may want to do do this without necessarily creating a Service Type Loadbalancer. Octant can help create a simple port forward for a pod via its dashboard.
+
+Deploy Nginx
+
+kubectl run nginx
 
 ## 
 
